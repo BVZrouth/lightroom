@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css"/>
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/MattKetmo/darkroomjs/master/build/darkroom.css"/>
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js"></script>
+<script src="https://rawgit.com/MattKetmo/darkroomjs/master/build/darkroom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.js"></script>
+</head>
+<body>
+<!-- Drop Zone -->
+<div class="container" id="dropZoneContainer">
+    <div class="card-panel waves-effect waves-block waves-green pt0 hovicon" id="zdrop">
+        <p>Drop files in this area or browse files to upload by clicking on the plus sign button.</p>
+    </div>
+    <div class="collection" id="previews">
+        <div class="collection-item clearhack valign-wrapper item-template" id="zdrop-template"></div>
+	</div>
+	<div class="actions">
+		<a href="#!" class="btn waves-effect waves-light start fileinput-button dz-clickable" id="upload">
+			<i class="fa fa-plus"></i>
+		</a>
+		<a href="#!" data-dz-remove class="btn ph red white-text waves-effect waves-light" id="delete">
+			<i class="fa fa-trash-o"></i>
+		</a>
+	</div>
+</div>
+<!-- Darkroom -->
+<div class="container" id="darkRoomContainer">
+	<div id="host"></div>
+</div>
+<div id="host"></div>
+<script src="bundle.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
